@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observe feature cards
-    const featureCards = document.querySelectorAll('.feature-card');
+    // Observe feature cards and step cards
+    const featureCards = document.querySelectorAll('.feature-card, .step-card');
     featureCards.forEach(card => {
         observer.observe(card);
     });
